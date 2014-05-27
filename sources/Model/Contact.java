@@ -1,4 +1,8 @@
 public class Contact {
+
+  ////////////
+  //Attributes
+  ////////////
   private String firstName;
   private String lastName;
   private String phoneNumber;
@@ -6,6 +10,9 @@ public class Contact {
   private String email;
   private String comment;
 
+  /////////////
+  //Constructor
+  /////////////
   public Contact(String firstName, String lastName,
             String phoneNumber, String address,
             String email, String comment){
@@ -17,6 +24,9 @@ public class Contact {
       this.comment = comment;
   }
 
+  /////////
+  //Getters
+  /////////
   public String getFirstName(){
     return this.firstName;
   }
@@ -41,6 +51,9 @@ public class Contact {
     return this.comment;
   }
 
+  /////////
+  //Setters
+  /////////
   public void setFirstName(String firstName){
     this.firstName = firstName;
   }
