@@ -1,0 +1,14 @@
+<!-- Root -->
+<!ELEMENT directory (contact?)>
+
+<!-- Contact -->
+<!ELEMENT contact (lastname,firstname,phone?,address?,email?,comment?)>
+<!ATTLIST contact id ID #REQUIRED>
+
+<!-- Fields -->
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT comment (#PCDATA)>

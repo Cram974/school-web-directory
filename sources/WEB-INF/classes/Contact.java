@@ -3,6 +3,7 @@ public class Contact {
   ////////////
   //Attributes
   ////////////
+  private int id;
   private String firstName;
   private String lastName;
   private String phoneNumber;
@@ -13,20 +14,35 @@ public class Contact {
   /////////////
   //Constructor
   /////////////
-  public Contact(String firstName, String lastName,
+
+  public Contact(){
+    this.id = -1;
+    this.firstName = "";
+    this.lastName = "";
+    this.phoneNumber = "";
+    this.address = "";
+    this.email = "";
+    this.comment = "";
+  }
+  public Contact(int id, String firstName, String lastName,
             String phoneNumber, String address,
             String email, String comment){
-      this.firstName = firstName;
-      this.lastName = lastName;
-      this.phoneNumber = phoneNumber;
-      this.address = address;
-      this.email = email;
-      this.comment = comment;
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.phoneNumber = phoneNumber;
+    this.address = address;
+    this.email = email;
+    this.comment = comment;
   }
 
   /////////
   //Getters
   /////////
+  public int getId(){
+    return this.id;
+  }
+
   public String getFirstName(){
     return this.firstName;
   }
@@ -54,6 +70,10 @@ public class Contact {
   /////////
   //Setters
   /////////
+  public void setId(int id){
+    this.id = id;
+  }
+
   public void setFirstName(String firstName){
     this.firstName = firstName;
   }
